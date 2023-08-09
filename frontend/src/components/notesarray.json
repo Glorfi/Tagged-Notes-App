@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Test Note 1",
+    "text": "Test text",
+    "tags": [
+      "Idea"
+    ],
+    "_id": "1"
+  },
+  {
+    "title": "Test Note 2",
+    "text": "Test text 2",
+    "tags": [
+      "Shopping list"
+    ],
+    "_id": "2"
+  },
+  {
+    "title": "Test Note 3",
+    "text": "Test text 3",
+    "tags": [
+      "Plan"
+    ],
+    "_id": "3"
+  },
+  {
+    "title": "Test Note 4",
+    "text": "Test text",
+    "tags": [
+      "Idea"
+    ],
+    "_id": "4"
+  },
+  {
+    "title": "Test Note 5",
+    "text": "Test text",
+    "tags": [
+      "Shopping list"
+    ],
+    "_id": "5"
+  },
+  {
+    "title": "Test Note 6",
+    "text": "Test text",
+    "tags": [
+      "Plan"
+    ],
+    "_id": "6"
+  }
+]

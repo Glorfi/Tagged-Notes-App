@@ -4,9 +4,8 @@ import Notes from './Notes';
 function App() {
   return (
     <div className="App">
-      <div className="overlay">
-        <Notes />
-      </div>
+      <div className="overlay"> </div>
+      <Notes />
     </div>
   );
 }

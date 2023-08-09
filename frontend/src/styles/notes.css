@@ -38,8 +38,24 @@
   background-repeat: no-repeat;
 }
 .notes__container {
-  margin-top: 37px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
+}
+
+.notes__filter {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+.notes__filter_active {
+  opacity: 1;
+}
+.notes__filter-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }

@@ -71,6 +71,7 @@
   background-repeat: no-repeat;
 }
 .note__button_type_delete {
+  margin: 0 0 0 auto;
   background-image: url(../src/assets/trash.svg);
   background-size: 18px;
   background-position: center;
@@ -131,15 +132,16 @@
 .note__footer {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .note__tag-container {
   display: flex;
 }
 
 .note__button_type_tag {
+  margin: 0 0 0 5px;
   min-width: fit-content;
-  width: 30%;
+  /* width: 30%; */
   padding: 0 10px 0 10px;
   border: 1px solid black;
   border-radius: 30px;
