@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const noteSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
+    required: false,
   },
   text: {
     type: String,
-    required: true,
+    required: false,
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
@@ -28,4 +28,4 @@ const noteSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('card', noteSchema);
+module.exports = mongoose.model('note', noteSchema);

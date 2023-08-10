@@ -5,9 +5,7 @@ const linkRegex = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[a-zA-Z
 const credentialsConfig = {
   body: Joi.object().keys({
     name: Joi.string().min(2).max(30),
-    about: Joi.string().min(2).max(30),
     email: Joi.string().required().email({ tlds: false }),
-    avatar: Joi.string().regex(linkRegex),
     password: Joi.string().required().min(3),
   }),
 };

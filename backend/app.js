@@ -10,8 +10,8 @@ const { credentialsConfig } = require('./utils/validationConfig');
 
 const app = express();
 
-const { login, createUser } = require('./controllers/users');
-// const auth = require('./middlewares/auth');
+const { login, createUser, logout } = require('./controllers/users');
+const auth = require('./middlewares/auth');
 const handleErrors = require('./middlewares/handleErrors');
 const NotFound = require('./utils/NotFound');
 const corshandler = require('./middlewares/corshandler');
@@ -27,16 +27,15 @@ app.use(corshandler);
 app.use(cookieParser());
 // app.use(requestLogger);
 
-app.post('/signup', celebrate(credentialsConfig), createUser);
+app.post('/signup', createUser);
 app.post('/signin', celebrate(credentialsConfig), login);
-// app.use(auth);
+app.use(auth);
 // app.use(rootRouter);
-// app.use('/users', require('./routes/users'));
-app.use('/cards', require('./routes/cards'));
-
-// app.get('/signout', logout);
+app.use('/users', require('./routes/users'));
+app.use('/notes', require('./routes/notes'));
+app.post('/signout', logout);
 app.use((req, res, next) => {
-  const err = new NotFound('Неверный путь');
+  const err = new NotFound('Wrong Path');
   next(err);
 });
 // app.use(errorLogger);
